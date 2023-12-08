@@ -1,0 +1,65 @@
+﻿body {
+    background-color: indianred;
+}
+
+header {
+    background-color: white;
+    border-radius: 10%;
+    width: 150px;
+    margin: 0 auto;
+}
+
+span {
+    font-style: initial;
+}
+
+.div-1 {
+    display: flex;
+    column-gap: 10px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-2 span {
+    text-align: end;
+    display: block;
+    font-size: 28px;
+}
+
+.div-3 span {
+    display: block;
+    font-size: 28px;
+}
+
+.div-4 {
+    border-top: 5px;
+    border-bottom: 5px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: dotted;
+    border-color: black;
+    font-size: 28px;
+    padding: 20px;
+}
+
+    .div-4 span {
+        display: block;
+        padding: 5px;
+    }
+
+.fim {
+    font-size: 28px;
+}
+
+.logo {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+    .logo > img {
+        width: 150px;
+        height: 150px;
+    }

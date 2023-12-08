@@ -1,0 +1,27 @@
+﻿@model ProjetoFinalBruno.Models.Usuario
+@{
+    Layout = null;
+}
+<div class="text-center">
+    <link rel=" stylesheet" href="~/css/Stylelogin.css" />
+    <form asp-action="Login" class="tudo">
+        <img src="~/Img/_Pngtree_medical_health_logo_4135887-removebg-preview.png" alt="">
+        <p class="textinho">Cruz Procedimentos</p>
+        <div>
+            <label asp-for="Email"></label>
+            <input class="barra" asp-for="Email"/>
+            <span asp-validation-for="Email"></span>
+        </div>
+        <div>
+            <label asp-for="Senha"></label>
+            <input class="barra" asp-for="Senha" type="password" />
+            <span asp-validation-for="Senha"></span>
+        </div>
+        <br />
+        <div>
+            <input type="submit" class="botao" value="Entrar"/>
+        </div>
+        <br />
+        <span class="texto">@ViewBag.Mensagem</span>
+    </form>
+</div>

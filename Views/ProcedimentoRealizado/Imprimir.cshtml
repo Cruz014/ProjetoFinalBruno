@@ -1,0 +1,44 @@
+﻿@model ProjetoFinalBruno.Models.ProcedimentoRealizado
+
+@{
+    Layout = null;
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruz Procedimentos</title>
+    <link rel="stylesheet" href="~/css/Stylee.css">
+</head>
+<body>
+    <div class="logo">
+        <div class="tex">
+
+        </div>
+        <div>
+            <h1>Cruz Procecimentos</h1>
+        </div>
+    </div>
+    <header class="logo">
+        <img src="~/Img/_Pngtree_medical_health_logo_4135887-removebg-preview.png">
+    </header>
+    <div class="div-1">
+        <h3>Nome do Cliente: @Html.DisplayFor(model => model.Cliente.ClienteNome)</h3>
+        <hr />
+        <h3>Sexo Do Cliente: @Html.DisplayFor(model => model.Cliente.ClienteSexo) </h3>
+        <hr />
+        <h3>Idade Do Cliente: @Html.DisplayFor(model => model.Cliente.ClienteCpf)</h3>
+        <hr />
+        <h3>Clínica: Cruz Procedimentos</h3>
+        <hr />
+    </div>
+    <div class="div-2">
+        <Span>Data do Exame: @Html.DisplayFor(model => model.DataRealizacao)</Span>
+    </div>
+    <div class="div-3">
+        <Span>Exame: @Html.DisplayFor(model => model.Procedimento.ProcedimentoNome)</Span>
+    </div>
+    <div class="div-4">
+        <span>Obseraçoes: @Html.DisplayFor(model => model.ObersevacaoRealizacao)</span>
+    </div>
+    <span class="fim">Responsavel pelo Exame: @Html.DisplayFor(model => model.Colaborador.ColaboradorNome)</span>
+</body>
